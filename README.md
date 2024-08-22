@@ -4,6 +4,7 @@
 ## 用于加速开发和基准测试太阳预测方法的综合数据集
 ## A comprehensive dataset for the accelerated development and benchmarking of solar forecasting methods
 ### 直达链接
+https://zenodo.org/records/2826939
 ### 描述
 此存储库包含全面的太阳辐照度、成像和预报数据集。 
 此版本的目标是为研究界提供标准化的太阳和气象数据集，以加速预测方法的开发和基准测试。 
