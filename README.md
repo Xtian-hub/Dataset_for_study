@@ -12,7 +12,7 @@ https://zenodo.org/records/2826939
 此外，我们还提供常用外生变量的重叠数据，包括天空图像、卫星图像、数值天气预报和天气数据。 
 我们还包括基线模型的示例代码，用于对更复杂的模型进行基准测试。
 ### 文件 
-· Folsom_irradiance.csv                           主要的一分钟 GHI、DNI 和 DHI 数据。
+· Folsom_irradiance.csv                           主要的一分钟 GHI、DNI 和 DHI 数据。/n
 · Folsom_weather.csv                              主要一分钟天气数据。
 · Folsom_sky_images_{YEAR}.tar.bz2    主 Tar 档案，包含 2014、2015 和 2016 年每隔 1 分钟捕获的白天天空图像，使用 bz2 压缩。
 · Folsom_NAM_lat{LAT}_lon{LON}.csv   对距离目标位置最近的四个节点的主要 NAM 预测。{LAT} 和 {LON} 被本文表 I 中列出的节点坐标替换。 
