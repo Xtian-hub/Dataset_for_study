@@ -50,6 +50,9 @@ https://github.com/riccardocadei/photovoltaic-detection?tab=readme-ov-file#metho
 我们使用基于 U-net 的卷积神经网络 (CNN) 模型和自适应学习算法对其进行训练，计算 Iou 和 Acurrancy 来评估性能。  
 我们首先在整个数据集上训练模型，然后只关注特定类别的图像，即住宅区  
 ### 结果
+我们能够在像素级自动检测测试图像中的可用屋顶面积，性能可与最先进的技术相媲美。特别是，仅关注住宅区图像，我们在测试集上获得的准确率约为 0.97，交并比指数为 0.77，仅使用 244 张图像进行训练。下面是测试集上的预测示例。  
+![image](https://github.com/user-attachments/assets/3013bf41-f811-4ce1-a8f3-cb8c30300009)  
+
 ## 3 NSRDB: National Solar Radiation Database
 ## 3 国家太阳辐射数据库
 ### 直达链接
@@ -59,5 +62,3 @@ https://github.com/riccardocadei/photovoltaic-detection?tab=readme-ov-file#metho
 ![image](https://github.com/user-attachments/assets/052f3cf1-b063-46ae-ada1-bea97ae93ce2)  
 
 
-我们能够在像素级自动检测测试图像中的可用屋顶面积，性能可与最先进的技术相媲美。特别是，仅关注住宅区图像，我们在测试集上获得的准确率约为 0.97，交并比指数为 0.77，仅使用 244 张图像进行训练。下面是测试集上的预测示例。  
-![image](https://github.com/user-attachments/assets/3013bf41-f811-4ce1-a8f3-cb8c30300009)
