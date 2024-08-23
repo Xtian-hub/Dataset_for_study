@@ -30,3 +30,23 @@ https://zenodo.org/records/2826939
 Is compiled by 10.1063/1.5094494  (DOI)
 #### References
 Pedro, H.T.C., Larson, D.P., Coimbra, C.F.M., 2019. A comprehensive dataset for the accelerated development and benchmarking of solar forecasting methods. Journal of Renewable and Sustainable Energy 11, 036102. https://doi.org/10.1063/1.5094494
+
+## 2 通过卫星图像检测可用于安装光伏板的屋顶面积
+## 2 Detecting available rooftop area from satellite images to install photovoltaic panels
+### 主题：检测可用于光伏安装的屋顶面积  
+该项目的目标是在瑞士（日内瓦）的航拍图像中分割出可用于安装屋顶光伏 (PV) 板的区域，即在排除烟囱、窗户、现有 PV 装置和其他所谓的“上层建筑”后屋顶上的区域。该任务是一个逐像素的二元语义分割问题。我们感兴趣的是像素可以被归类为 PV 装置的“合适区域”的类别。
+![image](https://github.com/user-attachments/assets/345915d3-e853-44f1-92b8-73eac0413781)
+### 数据
+输入的航空图像是 PNG 格式的 RGB 航空图像，每张图像尺寸为 250×250×3，像素大小为 0.25×0.25 m^2。  
+数据集中的所有图像都是使用中的有用函数手动标记的labelling_tool。  
+标记的图像是一个二进制掩码，其中 PV 区域中的像素为 1，否则为 0。  
+训练之前，对原始输入图像进行饱和度和经典归一化变换。  
+实时数据论证仅应用于训练集，通过随机水平或垂直翻转图像或旋转九十度。  
+我们的模型的输出再次是二值图像，其中，如果像素位于 PV 区域的概率大于固定阈值，则该像素为一。  
+训练/验证/测试比例：80/10/10％  
+### 方法
+我们使用基于 U-net 的卷积神经网络 (CNN) 模型和自适应学习算法对其进行训练，计算 Iou 和 Acurrancy 来评估性能。  
+我们首先在整个数据集上训练模型，然后只关注特定类别的图像，即住宅区  
+### 结果
+我们能够在像素级自动检测测试图像中的可用屋顶面积，性能可与最先进的技术相媲美。特别是，仅关注住宅区图像，我们在测试集上获得的准确率约为 0.97，交并比指数为 0.77，仅使用 244 张图像进行训练。下面是测试集上的预测示例。  
+![image](https://github.com/user-attachments/assets/3013bf41-f811-4ce1-a8f3-cb8c30300009)
