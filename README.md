@@ -33,6 +33,8 @@ Pedro, H.T.C., Larson, D.P., Coimbra, C.F.M., 2019. A comprehensive dataset for 
 
 ## 2 通过卫星图像检测可用于安装光伏板的屋顶面积
 ## 2 Detecting available rooftop area from satellite images to install photovoltaic panels
+## 直达链接
+https://github.com/riccardocadei/photovoltaic-detection?tab=readme-ov-file#methods
 ### 主题：检测可用于光伏安装的屋顶面积  
 该项目的目标是在瑞士（日内瓦）的航拍图像中分割出可用于安装屋顶光伏 (PV) 板的区域，即在排除烟囱、窗户、现有 PV 装置和其他所谓的“上层建筑”后屋顶上的区域。该任务是一个逐像素的二元语义分割问题。我们感兴趣的是像素可以被归类为 PV 装置的“合适区域”的类别。
 ![image](https://github.com/user-attachments/assets/345915d3-e853-44f1-92b8-73eac0413781)
